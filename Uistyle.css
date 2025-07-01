@@ -313,10 +313,10 @@ img {
   }
 
   .secondary-nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
     padding: 10px;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .hero h1 {
