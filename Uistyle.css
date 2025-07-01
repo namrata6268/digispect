@@ -292,11 +292,11 @@ img {
 /* Responsive Design */
 @media (max-width: 768px) {
   .main-nav {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 10px;
-    width: auto;
-    padding: 10px;
+    gap: 4px;
+    font-size: 14px;
+    padding: 4px 0;
   }
 
   .left-section,
@@ -308,6 +308,9 @@ img {
     padding-right: 10px;
   }
 
+  .logo img{
+    height: 24px;
+  }
   .right-section a {
     margin-top: 5px;
   }
@@ -316,6 +319,7 @@ img {
     flex-direction: row;
     gap: 10px;
     padding: 10px;
+    
     align-items: flex-start;
   }
 
