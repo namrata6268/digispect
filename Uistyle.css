@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0b2d39;
+  color: white;
+}
+.main-nav {
+  margin-top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 8px;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  background-color: #fff;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-left: 55px;
+}
+.logo img {
+  height: 80px;
+}
+.delivery {
+      font-size: 14px;
+      color: #333;
+    }
+
+    .delivery strong {
+      font-weight: bold;
+    }
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 55px;
+}
+
+.right-section a {
+   text-decoration: none;
+      color: #000;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+}
+.right-section i{
+      font-size: 16px;
+}
+.secondary-nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+.secondary-nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.small-icon {
+      font-size: 10px;
+    }
+    
+    @media (max-width: 600px) {
+      .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .right-section {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .secondary-nav {
+        flex-wrap: wrap;
+      }
+    }
+
+.divide-text{
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin: 6px 0px;
+      position: relative; 
+}
+    .divide-text::before,
+    .divide-text::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 20%;
+      height: 1px;
+      background-color: #a4a0a0;
+    }
+
+    .divide-text::before { left: 350px; }
+    .divide-text::after { right: 350px; }
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2em;
+}
+
+.highlight {
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.feature-card {
+  display: flex;
+  justify-content: space-between;
+  background: #174a56;
+  padding: 0.5px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+}
+
+.feature-card img {
+  width: 40px;
+  margin-bottom: 10px
+}
+
+.search-container {
+      background-color: #fff;
+      border-radius: 16px;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-bar {
+      display: flex;
+      border: 1px solid #00a088;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .search-bar button {
+      background-color: #00897b;
+      color: #fff;
+      border: none;
+      height: 10px 10px;
+      padding: 10px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .divider-text {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin: 20px 0;
+      position: relative;
+    }
+
+    .divider-text::before,
+    .divider-text::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background-color: #7d7c7c;
+    }
+
+    .divider-text::before { left: 0; }
+    .divider-text::after { right: 0; }
+
+    .contact-options {
+      display: flex;
+      gap: 15px;
+      text-align: left;
+      margin-bottom: 30px;
+      text-decoration-color: #000;
+    }
+
+    .contact-options div {
+      flex: 1;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      color: #000;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: left;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .offers {
+      display: flex;
+      gap: 20px;
+    }
+
+    .offer-box {
+      flex: 1;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      position: relative;
+      text-align: left;
+      color: #000;
+    }
+
+    .offer-box.app {
+      background-color: #f0f5ff;
+      border-color: #9bbdff;
+    }
+
+    .offer-box.web {
+      background-color: #fff5f5;
+      border-color: #fdb2b2;
+    }
+
+    .offer-box h4 {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .offer-box h2 {
+      font-size: 22px;
+      margin: 5px 0;
+    }
+
+    .offer-box p {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .install-btn, .code-box {
+      margin-top: 15px;
+      background-color: #d8e2ff;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: inline-block;
+      font-size: 14px;
+    }
+
+    .code-box {
+      background-color: #ffe2e2;
+      font-weight: bold;
+    }
+
+    .offer-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      font-size: 28px;
+      color: #ddd;
+    }
+
+    .web .offer-icon { color: #f88; }
+    .app .offer-icon { color: #b3ccff; }
